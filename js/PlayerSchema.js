@@ -11,6 +11,8 @@ const PlayerSchema = new Schema({
   win: { type: Number, default: 0 },
   lose: { type: Number, default: 0 },
   winningRate: { type: Number, default: 0 },
+  created: { type: Date, default: Date.now() },
+  updated: { type: Date, default: Date.now() },
 });
 
 exports.PlayerSchema = PlayerSchema;
